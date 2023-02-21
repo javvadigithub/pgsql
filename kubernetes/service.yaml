@@ -7,7 +7,6 @@ metadata:
 spec:
   ports:
     - port: 5432
-  type: LoadBalancer
   selector:
     app: postgres-app
     tier: postgres
