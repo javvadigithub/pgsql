@@ -33,7 +33,9 @@ spec:
               value: /var/lib/postgresql/data/pgdata
           ports:
             - containerPort: 5432
+              nodePort: 31000
               name: postgres
+          type: NodePort
           volumeMounts:
             - name: postgres-stateful-data
               mountPath: /var/lib/postgresql/data
